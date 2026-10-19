@@ -1,0 +1,1 @@
+Certificados emitidos pelo comando `certificado` aparecem aqui.

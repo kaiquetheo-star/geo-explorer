@@ -1,0 +1,184 @@
+{
+  "trilhas": [
+    {
+      "id": "javascript",
+      "nome": "Trilha JavaScript",
+      "descricao": "Do zero ao DOM: fundamentos da linguagem, funções, objetos e programação assíncrona no navegador e no Node.js.",
+      "carga_horaria": "40h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Fundamentos da linguagem",
+          "duracao": "8h",
+          "topicos": ["variáveis e tipos", "operadores", "condicionais", "laços de repetição"]
+        },
+        {
+          "ordem": 2,
+          "titulo": "Funções e escopo",
+          "duracao": "10h",
+          "topicos": ["declaração e expressão", "arrow functions", "closures", "parâmetros padrão"]
+        },
+        {
+          "ordem": 3,
+          "titulo": "Objetos, arrays e JSON",
+          "duracao": "10h",
+          "topicos": ["métodos de array", "desestruturação", "spread/rest", "serialização JSON"]
+        },
+        {
+          "ordem": 4,
+          "titulo": "Assincronismo",
+          "duracao": "12h",
+          "topicos": ["callbacks", "promises", "async/await", "fetch e APIs"]
+        }
+      ],
+      "desafios": {
+        "iniciante": [
+          {
+            "titulo": "Conversor de temperaturas",
+            "enunciado": "Crie uma função que converte Celsius para Fahrenheit e vice-versa. A função deve receber o valor e a unidade de origem.",
+            "requisitos": ["função pura sem efeitos colaterais", "validar a unidade informada", "arredondar para 1 casa decimal"]
+          },
+          {
+            "titulo": "Contador de vogais",
+            "enunciado": "Escreva uma função que recebe uma frase e retorna quantas vogais (a, e, i, o, u) ela tem, ignorando maiúsculas e acentos.",
+            "requisitos": ["ignorar maiúsculas/minúsculas", "ignorar acentos", "retornar um número inteiro"]
+          }
+        ],
+        "intermediario": [
+          {
+            "titulo": "Relatório de vendas",
+            "enunciado": "Dado um array de pedidos {produto, valor, quantidade}, produza um relatório com o faturamento total, o produto mais vendido e a média por pedido.",
+            "requisitos": ["usar reduce/map/filter", "não mutar o array original", "retornar um objeto com 3 chaves"]
+          },
+          {
+            "titulo": "Busca com debounce",
+            "enunciado": "Implemente uma função debounce(fn, atraso) que só executa fn depois que o usuário para de chamar pelo tempo informado.",
+            "requisitos": ["cancelar chamadas pendentes", "preservar o argumento da última chamada", "testar com setTimeout"]
+          }
+        ],
+        "avancado": [
+          {
+            "titulo": "Cliente de API com retry",
+            "enunciado": "Crie uma função async que faz fetch em uma API e tenta novamente até 3 vezes com espera crescente (1s, 2s, 4s) quando a resposta falha.",
+            "requisitos": ["usar async/await", "espera exponencial entre tentativas", "erro final com mensagem clara"]
+          },
+          {
+            "titulo": "Mini Pub/Sub",
+            "enunciado": "Implemente um barramento de eventos com on(evento, callback), off(evento, callback) e emit(evento, dados).",
+            "requisitos": ["múltiplos ouvintes por evento", "off remove só o ouvinte informado", "emit não quebra se não houver ouvintes"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "python",
+      "nome": "Trilha Python",
+      "descricao": "Sintaxe limpa e poderosa: fundamentos, estruturas de dados, orientação a objetos e automação de tarefas do dia a dia.",
+      "carga_horaria": "36h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Fundamentos",
+          "duracao": "8h",
+          "topicos": ["variáveis e tipos", "entrada/saída", "condicionais", "repetição"]
+        },
+        {
+          "ordem": 2,
+          "titulo": "Estruturas de dados",
+          "duracao": "10h",
+          "topicos": ["listas", "tuplas", "dicionários", "compreensões"]
+        },
+        {
+          "ordem": 3,
+          "titulo": "Funções e módulos",
+          "duracao": "8h",
+          "topicos": ["definição e retorno", "argumentos nomeados", "imports", "virtualenv"]
+        },
+        {
+          "ordem": 4,
+          "titulo": "Orientação a objetos e arquivos",
+          "duracao": "10h",
+          "topicos": ["classes e métodos", "herança", "leitura/escrita de arquivos", "tratamento de exceções"]
+        }
+      ],
+      "desafios": {
+        "iniciante": [
+          {
+            "titulo": "Calculadora de gorjetas",
+            "enunciado": "Escreva um programa que recebe o valor da conta e o percentual de gorjeta, e imprime o total e o valor por pessoa.",
+            "requisitos": ["entrada pelo teclado com input()", "validar valores negativos", "formatar com 2 casas decimais"]
+          }
+        ],
+        "intermediario": [
+          {
+            "titulo": "Frequência de palavras",
+            "enunciado": "Leia um arquivo de texto e mostre as 10 palavras mais frequentes, ignorando palavras de 3 letras ou menos.",
+            "requisitos": ["usar dicionário ou Counter", "ignorar maiúsculas e pontuação", "saída ordenada por frequência"]
+          }
+        ],
+        "avancado": [
+          {
+            "titulo": "Organizador de downloads",
+            "enunciado": "Crie um script que varre uma pasta e move arquivos para subpastas por extensão (imagens/, docs/, outros/), registrando o que fez.",
+            "requisitos": ["usar pathlib", "não sobrescrever arquivos existentes", "gerar um log das movimentações"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cloud-devops",
+      "nome": "Trilha Cloud & DevOps",
+      "descricao": "Infraestrutura como código e cultura de entrega: contêineres, CI/CD, observabilidade e deploy em nuvem.",
+      "carga_horaria": "44h",
+      "modulos": [
+        {
+          "ordem": 1,
+          "titulo": "Linux e rede para DevOps",
+          "duracao": "10h",
+          "topicos": ["terminal e permissões", "processos e serviços", "DNS e HTTP", "SSH"]
+        },
+        {
+          "ordem": 2,
+          "titulo": "Git e colaboração",
+          "duracao": "8h",
+          "topicos": ["branches e merges", "pull requests", "conventional commits", "code review"]
+        },
+        {
+          "ordem": 3,
+          "titulo": "Contêineres com Docker",
+          "duracao": "12h",
+          "topicos": ["imagens e camadas", "Dockerfile", "volumes e redes", "docker compose"]
+        },
+        {
+          "ordem": 4,
+          "titulo": "CI/CD e nuvem",
+          "duracao": "14h",
+          "topicos": ["pipelines (GitHub Actions)", "testes no pipeline", "variáveis e segredos", "deploy e rollback"]
+        }
+      ],
+      "desafios": {
+        "iniciante": [
+          {
+            "titulo": "Seu primeiro Dockerfile",
+            "enunciado": "Conteinerize uma aplicação simples (ex.: servidor HTTP que responde na porta 8080) com Dockerfile multi-estado de build mínimo.",
+            "requisitos": ["imagem final menor que 200MB", "rodar com usuário não-root", "documentar o comando de execução"]
+          }
+        ],
+        "intermediario": [
+          {
+            "titulo": "Pipeline que testa antes de publicar",
+            "enunciado": "Monte um workflow no GitHub Actions que rode os testes do Geo-Explorer em 2 versões de Node e só publique se ambos passarem.",
+            "requisitos": ["matriz de versões", "cache de dependências", "bloquear o passo de publish em caso de falha"]
+          }
+        ],
+        "avancado": [
+          {
+            "titulo": "Health check e rollback",
+            "enunciado": "Adicione ao seu pipeline um passo de health check pós-deploy que faz rollback automático se o endpoint /health não responder 200 em 30s.",
+            "requisitos": ["timeout de 30s", "rollback automático", "notificação do resultado no log do job"]
+          }
+        ]
+      }
+    }
+  ]
+}
